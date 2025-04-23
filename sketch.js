@@ -7,14 +7,14 @@ function setup() {
     let heart = new Heart(
       random(width), // 隨機 x 座標
       random(height), // 隨機 y 座標
-      random(10, 50) // 隨機大小
+      random(20, 100) // 調整愛心大小範圍，讓愛心變大
     );
     hearts.push(heart);
   }
 }
 
 function draw() {
-  background(255); // 每次重繪背景白色
+  background(0); // 將背景改為黑色
 
   // 更新並顯示所有泡泡
   for (let bubble of bubbles) {
